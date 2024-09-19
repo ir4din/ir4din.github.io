@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پیتزا نقطه سفید</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-and-title">
+      <img src="location-icon.png" alt="Location Icon" class="icon">
+      <h1>پیتزا نقطه سفید</h1>
+      <a href="https://www.instagram.com/whitespotpizza/" target="_blank" class="icon2">
+        <img src="instagram-icon.png" alt="Instagram Icon" class="icon2">
+      </a>
+    </div>
+  </header>
+  <nav class="menu-categories">
+    <button onclick="showCategory('pizzas')">پیتزا</button>
+    <button onclick="showCategory('burgers')">برگر</button>
+    <button onclick="showCategory('pastas')">پاستا</button>
+    <button onclick="showCategory('starters')">پیش‌غذا</button>
+    <button onclick="showCategory('plates')">بشقاب مخصوص</button>
+    <button onclick="showCategory('salads')">سالاد</button>
+    <button onclick="showCategory('mocktails')">موکتل</button>
+    <button onclick="showCategory('drinks')">نوشیدنی</button>
+  </nav>
+  <section class="pizza-menu">
+    <div class="menu-item pizzas">
+      <img src="pepperoni-pizza.jpg" alt="پیتزا پپرونی ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا پپرونی ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، پپرونی، پنیر زیتونی، فلفل دلمه</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۴۲۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item pizzas">
+      <img src="italian-steak-pizza.jpg" alt="پیتزا سیر و استیک ایتالیایی ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا سیر و استیک ایتالیایی ناپولیتن</h2>
+          <p>فیله گوساله، قارچ، روکولا، سس گوجه، پنیر سیامزگی، پنیر موزارلا</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۵۰۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="blue-cheese-steak-pizza.jpg" alt="پیتزا بلوچیز استیک ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا بلوچیز استیک ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، فیله گوساله، قارچ، پیاز کاراملی، روکولا، بلوچیز، پنیر موزارلا، پنیر پارمسان، سس قارچ
+          </p>
+        </div>
+        <div class="item-price">
+          <span class="price">۵۱۲,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="pesto-chicken-pizza.jpg" alt="پیتزا مرغ پستو ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا مرغ پستو ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، مرغ مزه دار شده، قارچ، ریحون تازه ایتالیایی، گوجه خشک، سس پستو، پنیر موزارلا، پنیر
+            پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۹۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="bacon-mushroom-pizza.jpg" alt="پیتزا بیکن و قارچ ناپولیتن سس گوجه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا بیکن و قارچ ناپولیتن سس گوجه</h2>
+          <p>خمیر پیتزا ناپولیتن، بیکن، قارچ، ریحون تازه ایتالیایی، پنیر موزارلا، پنیر پارمسان، پنیر سیامزگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۴۶۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="chicken-mushroom-pizza.jpg" alt="پیتزا مرغ و قارچ ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا مرغ و قارچ ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، مرغ مزه دار شده، قارچ، ریحون تازه ایتالیایی، سس قارچ، پنیر سیامزگی، پنیر موزارلا، پنیر
+            پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۵۸,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="bacon-mushroom-pizza-sauce-mushroom.jpg" alt="پیتزا بیکن و قارچ ناپولیتن سس قارچ" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا بیکن و قارچ ناپولیتن سس قارچ</h2>
+          <p>خمیر پیتزا ناپولیتن، بیکن، قارچ، ریحون تازه ایتالیایی، پنیر موزارلا، پنیر پارمسان، پنیر سیامزگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۴۶۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="bacon-mushroom-pizza-sauce-spinach.jpg" alt="پیتزا بیکن و قارچ ناپولیتن سس اسفناج" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا بیکن و قارچ ناپولیتن سس اسفناج</h2>
+          <p>خمیر پیتزا ناپولیتن، بیکن، قارچ، ریحون تازه ایتالیایی، پنیر موزارلا، پنیر پارمسان، پنیر سیامزگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۴۶۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="veggie-prime-pizza-sauce-tomato.jpg" alt="پیتزا وجی پرایم ناپولیتن سس گوجه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا وجی پرایم ناپولیتن سس گوجه</h2>
+          <p>خمیر پیتزا ناپولیتن، بیبی اسفناج، زیتون سبز، گوجه خشک، گردو کاراملی، ریحون تاره ایتالیایی، پنیر موزارلا،
+            پنیر پارمسان، پنیر سیامزگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۳۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="veggie-prime-pizza-sauce-alfredo.jpg" alt="پیتزا وجی پرایم ناپولیتن سس آلفردو" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا وجی پرایم ناپولیتن سس آلفردو</h2>
+          <p>خمیر پیتزا ناپولیتن، بیبی اسفناج، زیتون سبز، گوجه خشک، گردو کاراملی، ریحون تاره ایتالیایی، پنیر موزارلا،
+            پنیر پارمسان، پنیر سیامزگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۳۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="fungi-pizza.jpg" alt="پیتزا فونگی ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا فونگی ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، پنیر موزارلا، قارچ، روکولا، گردو کاراملی، سس قارچ</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۱۰,۰۰۰ تومان </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item pizzas">
+      <img src="margarita-pizza.jpg" alt="پیتزا مارگاریتا ناپولیتن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا مارگاریتا ناپولیتن</h2>
+          <p>خمیر پیتزا ناپولیتن، گوجه فرنگی، پنیر موزارلا، ریحان تازه</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۸۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item burgers">
+      <img src="slider-burger.jpg" alt="برگر لقمه ای" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>برگر لقمه ای</h2>
+          <p>برگر سرخ شده، فلفل دلمه، پنیر گودا، سس برنیز، سس قارچ به همراه سیب زمینی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۶۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item burgers">
+      <img src="cheeseburger.jpg" alt="چیز برگر" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>چیز برگر</h2>
+          <p>برگر گریل شده، پیاز کریسپی، کاهو، گوجه فرنگی، سس پنیر به همراه سیب زمینی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۴۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item burgers">
+      <img src="bacon-burger.jpg" alt="بیکن برگر" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>بیکن برگر</h2>
+          <p>برگر گریل شده، بیکن، پیاز کاراملایز شده، سس قارچ، کاهو، گوجه، سس قارچ به همراه سیب زمینی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۹۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item pastas">
+      <img src="fettuccine-chicken-pasta.jpg" alt="پاستا فتوچینی مرغ با سس خامه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پاستا فتوچینی مرغ با سس خامه</h2>
+          <p>فیله مرغ، سیر، قارچ، سس خامه، پنیر پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۴۸,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item plates">
+      <img src="sausage-bacon-plate.jpg" alt="بشقاب سوسیس و بیکن" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>بشقاب سوسیس و بیکن</h2>
+          <p>سوسیس شکاری، بیکن، سیب زمینی سرخ شده، فلفل دلمه، قارچ، پیاز، گوجه گیلاسی، سس باربیکیو، نان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۵۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item plates">
+      <img src="grilled-chicken-plate.jpg" alt="بشقاب مرغ گریل" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>بشقاب مرغ گریل</h2>
+          <p>فیله مرغ گریل شده، سالاد سیب کلم (سیب، کلم، کرنبری، شوید، با سس ماست)</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۴۴۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item salads">
+      <img src="white-spot-salad.jpg" alt="سالاد نقطه سفید" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سالاد نقطه سفید</h2>
+          <p>کاهو، سینه مرغ گریل، خیار، سیب، گوجه گیلاسی، پنیر کبابی، کنجد، گردو کاراملی، سس خردل و عسل، پنیر پارمسان
+          </p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۱۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item salads">
+      <img src="romanesco-salad.jpg" alt="سالاد رومنس" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سالاد رومنس</h2>
+          <p>یک تا دونفره، میکس کاهو و سبزیجات، خیار، توت فرنگی، بادام زمینی، کینوا، سس زرشک، پنیر پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۰۷,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item salads">
+      <img src="grilled-caesar-salad.jpg" alt="سالاد سزار گریل" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سالاد سزار گریل</h2>
+          <p>یک نفره، ۲ عدد سینه مرغ گریل شده، کاهو، نان کروتان، پنیر پارمسان، سس سزار</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۱۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item salads">
+      <img src="crispy-caesar-salad.jpg" alt="سالاد سزار سوخاری" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سالاد سزار سوخاری</h2>
+          <p>یک تا دونفره، ۲ عدد کورردن بلو سوخاری شده، کاهو، نان کروتان، پنیر پارمسان، سس سزار</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۱۳,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item salads">
+      <img src="garden-salad.jpg" alt="سالاد باغ سبز" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سالاد باغ سبز</h2>
+          <p>یک تا دونفره، میکس کاهو و سبزیجات، فلفل دلمه ای، خیار، سیب، گوجه گیلاسی، ریحان، جوانه شبدر، تخم افتاب
+            گردان، سس سبز، پنیر فتا، پنیر پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۰۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item starters">
+      <img src="chocolate-fruit-pizza.jpg" alt="پیتزا شکلات و میوه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>پیتزا شکلات و میوه</h2>
+          <p>یک نفره، سس شکلات، موز، توت فرنگی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۳۱۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item starters">
+      <img src="baked-potato-bacon-cream.jpg" alt="سیب زمینی تنوری (سس بیکن و خامه)" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>سیب زمینی تنوری (سس بیکن و خامه)</h2>
+          <p>یک نفره، سیب زمینی مزه دار شده، سس خامه و بیکن، پنیر پارمسان</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۰۱,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item starters">
+      <img src="vegetable-spring-rolls.jpg" alt="اسپرینگ رول سبزیجات" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>اسپرینگ رول سبزیجات</h2>
+          <p>۵ عدد اسپرینگ رول سبزیجات، سس سوییت چیلی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۱۹۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item starters">
+      <img src="chicken-spring-rolls.jpg" alt="اسپرینگ رول مرغ" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>اسپرینگ رول مرغ</h2>
+          <p>۵ عدد اسپرینگ رول مرغ، سس سوییت چیلی</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۱۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item starters">
+      <img src="olive-tapas.jpg" alt="کاسه مزه زیتون" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>کاسه مزه زیتون</h2>
+          <p>زیتون تازه مزه دار شده، سیر، فلفل دلمه، ادویه مخصوص</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۸۰,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item mocktails">
+      <img src="fresh-lemonade.jpg" alt="لیموناد تازه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>لیموناد</h2>
+          <p>لیموناد تازه</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۹۲,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item mocktails">
+      <img src="fresh-mojito.jpg" alt="موهیتو تازه" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>موهیتو</h2>
+          <p>موهیتو تازه</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۱۰۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="hd-lemon-malt-beer.jpg" alt="ماء الشعیر قوطی هی دی لیمو" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>ماء الشعیر قوطی هی دی لیمو</h2>
+          <p>۳۳۰ میلی لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۵,۵۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="hd-classic-malt-beer.jpg" alt="ماء الشعیر قوطی هی دی کلاسیک" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>ماء الشعیر قوطی هی دی کلاسیک</h2>
+          <p>۳۳۰ میلی لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۵,۵۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="coca-cola-can.jpg" alt="نوشابه قوطی کوکاکولا" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>نوشابه قوطی کوکاکولا</h2>
+          <p>۳۰۰ میلی لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="fanta-orange-can.jpg" alt="نوشابه قوطی فانتا پرتقالی" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>نوشابه قوطی فانتا پرتقالی</h2>
+          <p>۳۰۰ میلی لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="sprite-can.jpg" alt="نوشابه قوطی اسپرایت" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>نوشابه قوطی اسپرایت</h2>
+          <p>۳۰۰ میلی لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۲۴,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item drinks">
+      <img src="small-water-bottle.jpg" alt="آب معدنی کوچک" class="pizza-image">
+      <div class="item-content">
+        <div class="item-details">
+          <h2>آب معدنی کوچک</h2>
+          <p>۰.۵ لیتر</p>
+        </div>
+        <div class="item-price">
+          <span class="price">۶,۵۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>پیتزا نقطه سفید</h1>
+      </div>
+      <div class="footer-address">
+        <p>شهرک غرب خیابان ایران زمین مرکز خرید گلستان واحد ۱۰۴</p>
+      </div>
+      <div class="footer-contacts">
+        <p>
+          ☎️ تلفن :
+          <a href="tel:88367330">88367330</a> -
+          <a href="tel:88365741">88365741</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

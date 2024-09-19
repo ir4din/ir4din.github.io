@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Estedad';
+  src: url('Estedad.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'Estedad', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Estedad', sans-serif;
+  background-color: #EFEFEF;
+  color: #333;
+  text-align: center;
+  direction: rtl;
+}
+
+header {
+  background-color: #57585A10;
+  padding: 8px;
+  border: 1.4px solid #57585A;
+  border-radius: 20px;
+  margin: 10px auto; /* مرکز کردن هدر به‌طور افقی */
+  width: calc(100% - 20px); /* عرض کامل منهای فاصله از هر طرف */
+  box-sizing: border-box; /* برای اطمینان از اینکه padding در عرض حداکثر حساب شود */
+}
+
+/* تنظیمات برای عرض‌های کمتر از 600 پیکسل */
+@media (max-width: 600px) {
+  header {
+    max-width: calc(100% - 20px); /* عرض حداکثر 600 پیکسل با احتساب فاصله 10 پیکسل از هر طرف */
+  }
+}
+
+/* تنظیمات برای عرض‌های بزرگتر از 600 پیکسل */
+@media (min-width: 601px) {
+  header {
+    max-width: 600px; /* عرض حداکثر 600 پیکسل */
+  }
+}
+
+.logo-and-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.logo-and-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #57585A;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon2 {
+  height: 45px;
+}
+
+.menu-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* چهار ستون با عرض مساوی */
+  gap: 15px;
+  margin: 20px auto 40px;
+  max-width: 600px; /* عرض حداکثر کانتینر دکمه‌ها */
+  padding: 0 10px; /* فاصله داخلی در طرفین */
+  box-sizing: border-box; /* برای اطمینان از اینکه padding در عرض حداکثر حساب شود */
+}
+
+.menu-categories button {
+  font-weight: 500;
+  padding: 12px;
+  border: 1.4px solid #57585A;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* متن دکمه‌ها را در وسط قرار می‌دهد */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه کوچک */
+}
+
+.menu-categories button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه بزرگتر */
+  transform: translateY(-2px); /* جابجایی جزئی به بالا */
+
+}
+
+@media (max-width: 480px) {
+  .menu-categories {
+    grid-template-columns: repeat(2, 1fr); /* دو ستون برای نمایش در صفحه‌های کوچکتر */
+  }
+}
+
+.pizza-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  background-color: #D9D9D9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 600px;
+  border: 1.4px solid #57585A;
+}
+
+
+.pizza-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* اشغال فضای باقی‌مانده */
+  text-align: right; /* تراز کردن محتوای داخل این بخش به سمت راست */
+  margin-right: 20px; /* فاصله از تصویر */
+}
+
+.item-details {
+  margin-bottom: 10px; /* فاصله پایین برای توضیحات */
+}
+
+.item-details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #57585A;
+}
+
+.item-details p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #57585A;
+}
+
+.item-price {
+  text-align: left; /* تراز کردن قیمت به سمت چپ */
+}
+.price {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  border-top: 1px solid #444;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Flexbox for footer content alignment */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styling for paragraph elements in the footer */
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Link styling */
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+/* Styling for footer contacts */
+.footer-contacts {
+  margin-top: 10px;
+}
+
+/* Style for phone number links */
+.footer-contacts a {
+  color: inherit; /* Use the text color of the parent element */
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Set the color of the text inside .footer-contacts if needed */
+.footer-contacts p {
+  color: #fff; /* Set to the desired color */
+}
+
